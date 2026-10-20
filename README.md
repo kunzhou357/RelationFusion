@@ -72,7 +72,10 @@ utils/               dataset(配对数据) augment(退化增强) controlled_view
 
 - 检查点为完整快照（模型/优化器/调度器/RNG/数据加载状态 + 训练溯源），加载时严格校验一致性；`--joint-mode auto` 依据检查点溯源自动选择推理分支。
 - 训练不划分验证集、不按指标挑选检查点；参考教师（SourceTrust 冻结）通过受控视图上的程序化审计启用。
-- 本仓库不含数据集与训练产物；受版面所限权重与融合结果不入库。
+- 本仓库不含数据集；`ckpt/latest.pt` 为已训练的完整检查点快照，可直接用于推理：
+  ```bash
+  python test.py --checkpoint ckpt/latest.pt --data-root data/MSRS/test --output results/relation_v3 --metrics
+  ```
 
 ## License
 

@@ -9,9 +9,7 @@ __pycache__/
 data/
 runs/
 results/
-ckpt/
 runs.zip
-*.pt
 
 # 个人汇报材料
 *.pptx
