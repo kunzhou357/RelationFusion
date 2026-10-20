@@ -5,8 +5,10 @@
 __pycache__/
 *.pyc
 
-# 数据集与训练/推理产物（体积过大，不入库；请自行下载 MSRS/LLVIP）
-data/
+# 数据集内容不入库（仅保留目录骨架，请自行下载 MSRS/LLVIP 放入）
+data/**
+!data/**/
+!data/**/.gitkeep
 runs/
 results/
 runs.zip
