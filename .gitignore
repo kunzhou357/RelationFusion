@@ -1,0 +1,19 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# 数据集与训练/推理产物（体积过大，不入库；请自行下载 MSRS/LLVIP）
+data/
+runs/
+results/
+ckpt/
+runs.zip
+*.pt
+
+# 个人汇报材料
+*.pptx
+RelationFusion_V3_汇报文稿_2026-10-20.md
+RelationFusion_V3_PPT排版建议_2026-10-20.md
